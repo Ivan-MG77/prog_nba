@@ -12,6 +12,23 @@ public class Jugador {
         this.puntosPromedio = puntosPromedio;
     }
 
+    public int getId(){
+        return id;
+    }
+
+    public String getNombre(){
+        return nombre;
+    }
+
+    public String getPosicion(){
+        return posicion;
+    }
+
+    public double getPuntosPromedio(){
+        return puntosPromedio;
+    }
+
+
 
 
 
