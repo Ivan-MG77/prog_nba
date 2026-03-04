@@ -34,6 +34,18 @@ public class FranquiciaNBA {
         return posicionLibre;
     }
 
+    public boolean ficharJugador(Jugador nuevoJugador){
+        boolean jugadorFichado = false;
+        int huecoLibre = buscarPrimerHuecoLibre();
+
+        if (nuevoJugador != null && huecoLibre != -1 && buscarJugador(nuevoJugador.getId()) == null) {
+            jugadorFichado = true;
+            plantilla[huecoLibre] = nuevoJugador;
+        }
+        return jugadorFichado;
+    }
+
+
 
 
 
