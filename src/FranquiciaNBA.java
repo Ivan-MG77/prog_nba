@@ -21,6 +21,20 @@ public class FranquiciaNBA {
         return jugadorEncontrado;
     }
 
+    private int buscarPrimerHuecoLibre(){
+        int posicionLibre = -1;
+        boolean seguirBuscando = true;
+
+        for (int i = 0; i < MAX_JUGADORES; i++) {
+            if( plantilla[i] == null){
+                posicionLibre = i;
+                seguirBuscando = false;
+            }
+        }
+        return posicionLibre;
+    }
+
+
 
 
 }
