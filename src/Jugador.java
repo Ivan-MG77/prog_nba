@@ -32,10 +32,10 @@ public class Jugador {
     public String toString(){
         StringBuilder sb  = new StringBuilder();
 
-        sb.append(String.format("Id:", this.id));
-        sb.append(String.format("Nombre:", this.nombre));
-        sb.append(String.format("Posicion:", this.posicion));
-        sb.append(String.format("Puntos Promedio:", this.puntosPromedio));
+        sb.append(String.format("Id: %d", this.id));
+        sb.append(String.format("Nombre: %s", this.nombre));
+        sb.append(String.format("Posicion: %s", this.posicion));
+        sb.append(String.format("Puntos Promedio: %.2f", this.puntosPromedio));
 
         return sb.toString();
     }
