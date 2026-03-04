@@ -58,6 +58,18 @@ public class FranquiciaNBA {
         return sb.toString();
     }
 
+    public int contarJugadoresActuales(){
+        int contadorJugadores = 0;
+
+        for (int i = 0; i < MAX_JUGADORES; i++) {
+            if (plantilla[i] != null) {
+                contadorJugadores++;
+
+            }
+        }
+        return contadorJugadores;
+    }
+
 
 
 
