@@ -8,5 +8,19 @@ public class FranquiciaNBA {
         plantilla = new Jugador[MAX_JUGADORES];
     }
 
+    public Jugador buscarJugador(int id){
+        boolean seguirBuscando = true;
+        Jugador jugadorEncontrado = null;
+
+        for (int i = 0; i < MAX_JUGADORES && seguirBuscando; i++) {
+            if (plantilla[i].getId() == id){
+                jugadorEncontrado = plantilla[i];
+                seguirBuscando = false;
+            }
+        }
+        return jugadorEncontrado;
+    }
+
+
 
 }
