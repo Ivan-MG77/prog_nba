@@ -45,6 +45,19 @@ public class FranquiciaNBA {
         return jugadorFichado;
     }
 
+    public String mostrarPlantilla(){
+
+        StringBuilder sb = new StringBuilder("Plantilla : {");
+        for (int i = 0; i < MAX_JUGADORES; i++) {
+            if (plantilla[i] != null) {
+                sb.append(plantilla[i].toString());
+
+            }
+        }
+        sb.append("\n}");
+        return sb.toString();
+    }
+
 
 
 
